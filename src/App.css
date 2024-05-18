@@ -1,0 +1,134 @@
+/* styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.input-user {
+    margin-bottom: 20px;
+}
+
+.input-user form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-user input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-user button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-user button:hover {
+    background-color: #45a049;
+}
+
+/* Note container styling */
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+.note {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.note p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.note button {
+    align-self: flex-end;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.note button:hover {
+    background-color: #e53935;
+}
+
+/* Footer styling */
+.footer-container {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    flex-shrink: 0;
+}
+
+.footer-container .footer-copyright {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-container .footer-link-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-container .footer-link {
+    color: white; 
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-container .footer-link:hover {
+    text-decoration: underline;
+    color: #f9f9f9; 
+}

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer_Comp";
 import Note from "./Note";
@@ -10,7 +10,7 @@ function App() {
     function changeItems(userInput) {
         setItems(prev => {
             return [...prev, userInput];
-        })
+        });
     }
 
     function deleteItem(id) {
@@ -22,22 +22,24 @@ function App() {
     }
 
     return (
-        <div className = "container">
+        <div className="container">
             <Header />
-            <UserInput addItem={changeItems}/>
-
-            {items.map((item, index)  => {
-                return (
-                    <Note 
-                    key={index}
-                    id={index}
-                    title={item.title}
-                    content={item.content}
-                    deleteItem={deleteItem}
-                    />
-                );
-            })};
-            <Note />
+            <div className="main-content">
+                <UserInput addItem={changeItems} />
+                <div className="notes-container">
+                    {items.map((item, index) => {
+                        return (
+                            <Note
+                                key={index}
+                                id={index}
+                                title={item.title}
+                                content={item.content}
+                                deleteItem={deleteItem}
+                            />
+                        );
+                    })}
+                </div>
+            </div>
             <Footer />
         </div>
     );

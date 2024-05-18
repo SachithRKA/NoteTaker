@@ -21,7 +21,7 @@ function UserInput(props) {
         setInput({
             title: "",
             content: ""
-        });
+        })
         event.preventDefault();
     }
 
