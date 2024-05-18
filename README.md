@@ -1,5 +1,3 @@
-Sure! Here is a similar README file for your NoteTaker project:
-
 # NoteTaker
 
 ## Introduction
